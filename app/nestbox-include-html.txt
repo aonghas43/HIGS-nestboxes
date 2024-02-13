@@ -1,0 +1,6 @@
+<!-- rolls up into a bloack suitable for SquareSpace
+- this.css
+- data.json
+- mapscript.js
+-->
+
