@@ -15,7 +15,7 @@
 				
 				var Type = props["Kind of box"];
 				var extra = "";
-				var names = ["Robin", "Tawny owl", "Kestrel"];
+				var names = ["Robin", "Tawny Owl", "Kestrel", "Treecreeper"];
 				if  (names.includes(Type)) {
 				extra = " nest box";
 				}
@@ -37,7 +37,7 @@
 			  case 'Tit box' :
 				Col = "#FF0000";
 				break;
-			  case 'Tree creeper box':
+			  case 'Treecreeper':
 				Col = "#FF7F00";
 				break;
 			  case 'Starling box' :
@@ -49,17 +49,17 @@
 			 case 'Kestrel' :
 				Col = "#0000FF";
 				break;
-			 case 'Tawny owl' :	
+			 case 'Tawny Owl' :	
 				Col = "#4B0082";
 				break;
 			 case 'Barn owl box' :
 				Col = "#9400D3";
 				break;
-			 case 'Wren/Robin box' :
+			 case 'Wren/RobinBox' :
 				Col = "#000000";
 				break;
 			default:
-				Col = "#FFFFFF";
+				Col = "#00FFFF";
 				break;
 				}
 				return Col
@@ -75,8 +75,9 @@
 					opacity: 1,
 					fillOpacity: 0.8,
 					alt: feature.properties["Kind of Box"],
-					 autoPan : "false"
+					autoPan : "false"
 					};
+					// autoPan setting needed to prevent issues with popup
 			  return L.circleMarker(latlng, geojsonMarkerOptions);
 		};
 		
