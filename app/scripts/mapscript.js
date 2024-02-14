@@ -12,13 +12,20 @@
 		function popupContent(feature) {
 				
 				props = feature.properties;
-				var Type = props["Kind of box"] + " nest box";
+				
+				var Type = props["Kind of box"];
+				var extra = "";
+				var names = ["Robin", "Tawny owl", "Kestrel"];
+				if  (names.includes(Type)) {
+				extra = " nest box";
+				}
+				Type = Type + extra;
 				var long=feature.geometry.coordinates[1];
 				var lat=feature.geometry.coordinates[0];
 				var Streetview = '<a target="_blank" alt="Google streetview in separate tab" href="http://maps.google.com/maps?q=' 
 				+ long + ',' +  lat + '">Google Streetview &copy;' + '</a>';
 				
-				const contents = '<b>' + Type + '</b><br/>' + "Installed : " + props["Date installed"] + '<br />' + "2022 : " + props["2022"] + '</br/>' + "2023 : " + props["2023"] + '<br/>' + Streetview ;
+				const contents = '<b>' + Type + '</b><br/>' + "Number : " + props["Number"] + '<br/>' + "Installed : " + props["Date installed"] + '<br />' + "2022 : " + props["2022"] + '</br/>' + "2023 : " + props["2023"] + '<br/>' + Streetview ;
 				
 				return contents;
 		};
@@ -36,13 +43,13 @@
 			  case 'Starling box' :
 				Col = "#FFFF00";
 				break;
-			 case 'Robin box' :
+			 case 'Robin' :
 				Col = "#00FF00";
 				break;
-			 case 'Kestrel box' :
+			 case 'Kestrel' :
 				Col = "#0000FF";
 				break;
-			 case 'Tawny owl box' :	
+			 case 'Tawny owl' :	
 				Col = "#4B0082";
 				break;
 			 case 'Barn owl box' :
@@ -61,14 +68,14 @@
 		function boxMarker(feature, latlng) {
 			 
 			 var geojsonMarkerOptions = {
-					radius: 3,
+					radius: 4,
 					fillColor: getColour(feature),
 					color: "#000",
 					weight: 1,
 					opacity: 1,
 					fillOpacity: 0.8,
 					alt: feature.properties["Kind of Box"],
-					autoPan : "false"
+					 autoPan : "false"
 					};
 			  return L.circleMarker(latlng, geojsonMarkerOptions);
 		};
