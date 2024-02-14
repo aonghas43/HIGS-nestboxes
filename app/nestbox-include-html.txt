@@ -1,6 +1,22 @@
-<!-- rolls up into a bloack suitable for SquareSpace
-- this.css
-- data.json
-- mapscript.js
+<!-- version 0.9 -->
+<!--
+HTML Container for
+- custom CSS - leafetjs css overrides and others
+- tree data as Javascript
+- Javascript code for layers, styling etc.
+This file is loaded into squarespace.html via jQuery, for testing only
 -->
 
+<div id="map" style="width: 100%; height: 500px;"></div>
+
+<!-- CSS -->
+<style>
+</style>
+
+<script type="text/javascript">
+<!-- data  + mapscript here -->
+</script>
+
+
+<div id="ack">
+</div>
