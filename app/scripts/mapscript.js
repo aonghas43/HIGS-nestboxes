@@ -44,7 +44,7 @@
 				Col = "#FFFF00";
 				break;
 			 case 'Robin' :
-				Col = "#00FF00";
+				Col = "#84c823";
 				break;
 			 case 'Kestrel' :
 				Col = "#0000FF";
