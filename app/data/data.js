@@ -13,7 +13,7 @@ var data = {
 { "type": "Feature", "id": 7, "properties": { "Number": "6", "Kind of box": "Tit box", "Date installed": "26/02/2022", "2022": "Nest", "2023": "Nest", "GPS": "52.2488 0.1098" }, "geometry": { "type": "Point", "coordinates": [ 0.1098, 52.2488 ] } },
 { "type": "Feature", "id": 8, "properties": { "Number": "7", "Kind of box": "Robin", "Date installed": "26/02/2022", "2022": "Roosting", "2023": "Roosting", "GPS": "52.2484 0.1097" }, "geometry": { "type": "Point", "coordinates": [ 0.1097, 52.2484 ] } },
 { "type": "Feature", "id": 9, "properties": { "Number": "8", "Kind of box": "Tit box", "Date installed": "26/02/2022", "2022": "Nest (partial)", "2023": "Nest", "GPS": "52.2484 0.1098" }, "geometry": { "type": "Point", "coordinates": [ 0.1098, 52.2484 ] } },
-{ "type": "Feature", "id": 10, "properties": { "Number": "9", "Kind of box": "Wren/RobinBox", "Date installed": "26/02/2022", "2022": "No nest", "2023": "No nest", "GPS": "52.2484 0.1107" }, "geometry": { "type": "Point", "coordinates": [ 0.1107, 52.2484 ] } },
+{ "type": "Feature", "id": 10, "properties": { "Number": "9", "Kind of box": "Wren/Robin Box", "Date installed": "26/02/2022", "2022": "No nest", "2023": "No nest", "GPS": "52.2484 0.1107" }, "geometry": { "type": "Point", "coordinates": [ 0.1107, 52.2484 ] } },
 { "type": "Feature", "id": 11, "properties": { "Number": "10", "Kind of box": "Tit box", "Date installed": "01/05/2022", "2022": "N/A", "2023": "Nest (1 unhatched egg)", "GPS": "52.2422 0.1125" }, "geometry": { "type": "Point", "coordinates": [ 0.1125, 52.2422 ] } },
 { "type": "Feature", "id": 12, "properties": { "Number": "11", "Kind of box": "Robin", "Date installed": "01/05/2022", "2022": "N/A", "2023": "No nest", "GPS": "52.2427 0.1116" }, "geometry": { "type": "Point", "coordinates": [ 0.1116, 52.2427 ] } },
 { "type": "Feature", "id": 13, "properties": { "Number": "12", "Kind of box": "Robin", "Date installed": "01/05/2022", "2022": "N/A", "2023": "No nest", "GPS": "52.2420 0.1126" }, "geometry": { "type": "Point", "coordinates": [ 0.1126, 52.242 ] } },
@@ -41,7 +41,7 @@ var data = {
 { "type": "Feature", "id": 35, "properties": { "Number": "34", "Kind of box": "Tit box", "Date installed": "19/03/2022", "2022": "Roosting", "2023": "No nest", "GPS": "52.2544 0.0958" }, "geometry": { "type": "Point", "coordinates": [ 0.0958, 52.2544 ] } },
 { "type": "Feature", "id": 36, "properties": { "Number": "35", "Kind of box": "Tit box", "Date installed": "30/10/2022", "2022": "N/A", "2023": "Nest", "GPS": "52.2536 0.1109" }, "geometry": { "type": "Point", "coordinates": [ 0.1109, 52.2536 ] } },
 { "type": "Feature", "id": 37, "properties": { "Number": "36", "Kind of box": "Tit box", "Date installed": "30/10/2022", "2022": "N/A", "2023": "No nest", "GPS": "52.2401 0.1056" }, "geometry": { "type": "Point", "coordinates": [ 0.1056, 52.2401 ] } },
-{ "type": "Feature", "id": 38, "properties": { "Number": "37", "Kind of box": "Wren/RobinBox", "Date installed": "02/04/2022", "2022": "No nest", "2023": "No nest", "GPS": "52.2560 0.0935" }, "geometry": { "type": "Point", "coordinates": [ 0.0935, 52.256 ] } },
+{ "type": "Feature", "id": 38, "properties": { "Number": "37", "Kind of box": "Wren/Robin Box", "Date installed": "02/04/2022", "2022": "No nest", "2023": "No nest", "GPS": "52.2560 0.0935" }, "geometry": { "type": "Point", "coordinates": [ 0.0935, 52.256 ] } },
 { "type": "Feature", "id": 39, "properties": { "Number": "38", "Kind of box": "Robin", "Date installed": "19/03/2022", "2022": "No nest", "2023": "No nest", "GPS": "52.2561 0.0936" }, "geometry": { "type": "Point", "coordinates": [ 0.0936, 52.2561 ] } },
 { "type": "Feature", "id": 40, "properties": { "Number": "39", "Kind of box": "Robin", "Date installed": "30/10/2022", "2022": "N/A", "2023": "No nest", "GPS": "52.2536 0.1118" }, "geometry": { "type": "Point", "coordinates": [ 0.1118, 52.2536 ] } },
 { "type": "Feature", "id": 41, "properties": { "Number": "40", "Kind of box": "Robin", "Date installed": "30/10/2022", "2022": "N/A", "2023": "No nest", "GPS": "52.2521 0.0973" }, "geometry": { "type": "Point", "coordinates": [ 0.0973, 52.2521 ] } },
@@ -51,4 +51,5 @@ var data = {
 { "type": "Feature", "id": 45, "properties": { "Number": "44", "Kind of box": "Robin", "Date installed": "05/11/2022", "2022": "N/A", "2023": "Roosting", "GPS": "52.2368 0.1142" }, "geometry": { "type": "Point", "coordinates": [ 0.1142, 52.2368 ] } }
 ]
 }
+
 ;

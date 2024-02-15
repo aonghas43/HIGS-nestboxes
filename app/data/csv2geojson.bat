@@ -1,3 +1,4 @@
+@echo off
 rem
 rem (c) HIGS January 2024
 rem
@@ -26,9 +27,10 @@ rem https://epsg.io/4258 lat-long UK and Europe
 rem
 rem OGIS free software ogr2ogr for conversion from CSV to GeoJSON
 rem
-INFILE_OPTIONS=-if CSV -oo Y_POSSIBLE_NAMES=Lon* -oo X_POSSIBLE_NAMES=Lat*  -oo HEADERS=YES -oo KEEP_GEOM_COLUMNS=NO 
-OUTFILE_OPTIONS=-a_srs %CRS% -f GeoJSON -nlt POINT -nln %NAME% -lco DESCRIPTION=%DESC% -lco RFC7946=YES -lco ID_GENERATE=YES
-ogr2ogr %INFILE_OPTION% %OUTFILE_OPTIONS%-a_srs %CRS% -f GeoJSON -nlt POINT -nln %NAME% -lco DESCRIPTION=%DESC% -lco RFC7946=YES -lco ID_GENERATE=YES %OUTFILE%   %INFILE%
+@echo on
+set INFILE_OPTIONS=-if CSV -oo Y_POSSIBLE_NAMES=Lon* -oo X_POSSIBLE_NAMES=Lat*  -oo HEADERS=YES -oo KEEP_GEOM_COLUMNS=NO 
+set OUTFILE_OPTIONS=-a_srs %CRS% -f GeoJSON -nlt POINT -nln %NAME% -lco DESCRIPTION=%DESC% -lco RFC7946=YES -lco ID_GENERATE=YES
+ogr2ogr %INFILE_OPTIONS% %OUTFILE_OPTIONS%  %OUTFILE%   %INFILE%
 
 
 
