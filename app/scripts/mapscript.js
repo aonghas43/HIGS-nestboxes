@@ -1,4 +1,4 @@
-<!-- map code here -->
+
 {
 	 "use strict";
 		 
@@ -7,7 +7,6 @@
 						maxZoom: 20,
 						attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 					});
-
 
 		function popupContent(feature) {
 				
@@ -25,7 +24,11 @@
 				var Streetview = '<a target="_blank" alt="Google streetview in separate tab" href="http://maps.google.com/maps?q=' 
 				+ long + ',' +  lat + '">Google Streetview &copy;' + '</a>';
 				
-				const contents = '<b>' + Type + '</b><br/>' + "Number : " + props["Number"] + '<br/>' + "Installed : " + props["Date installed"] + '<br />' + "2022 : " + props["2022"] + '</br/>' + "2023 : " + props["2023"] + '<br/>' + Streetview ;
+				const contents = '<b>' + Type + '</b><br/>' + "Number : " + props["Number"] + '<br/>' + "Installed : " 
+				+ props["Date installed"] + '<br />' + "2022 : " 
+				+ props["2022"] + '</br/>' 
+				+ "2023 : " + props["2023"] 
+				+ '<br/>' + Streetview ;
 				
 				return contents;
 		};
@@ -68,22 +71,22 @@
 		function boxMarker(feature, latlng) {
 			 
 			 var geojsonMarkerOptions = {
-					radius: 4,
+					radius: 6,
 					fillColor: getColour(feature),
 					color: "#000",
 					weight: 1,
 					opacity: 1,
 					fillOpacity: 0.8,
-					alt: feature.properties["Kind of Box"],
-					autoPan : "false"
+					alt: feature.properties["Kind of Box"]
 					};
 					// autoPan setting needed to prevent issues with popup
 			  return L.circleMarker(latlng, geojsonMarkerOptions);
 		};
-		
-		const boxes = L.geoJSON(data, { pointToLayer: boxMarker,
-		                   attribution: 'Nest box data owned on behalf of the community by <a href="https://www.higreenspaces.org/about-us">Histon and Impington Green Spaces</a>',
-						    } ).bindPopup(function (layer) {
+
+		const boxes = L.geoJSON(data, 
+			{ pointToLayer: boxMarker,
+		    attribution: 'Nest box data owned on behalf of the community by <a href="https://www.higreenspaces.org/about-us">Histon and Impington Green Spaces</a>',
+			} ).bindPopup(function (layer) {
 								  return popupContent(layer.feature);
 				   });
 				   
@@ -95,5 +98,5 @@
 			// layers which are on by default
 			layers: [tiles, boxes]
 			});		
-			
+	
 };
