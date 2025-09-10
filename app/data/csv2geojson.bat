@@ -5,7 +5,7 @@ rem
 rem set YEAR=2023-24
 
 set NAME="HIGS Nestboxes"
-set DESC="HIGS Nestboxes 2022-24"
+set DESC="HIGS Nestboxes 2022-25"
 
 rem
 rem don't change below here
