@@ -24,10 +24,12 @@
 				var Streetview = '<a target="_blank" alt="Google streetview in separate tab" href="http://maps.google.com/maps?q=' 
 				+ long + ',' +  lat + '">Google Streetview &copy;' + '</a>';
 				
-				const contents = '<b>' + Type + '</b><br/>' + "Number : " + props["Number"] + '<br/>' + "Installed : " 
-				+ props["Date installed"] + '<br />' + "2022 : " 
-				+ props["2022"] + '</br/>' 
-				+ "2023 : " + props["2023"] 
+				const contents = '<b>' + Type + '</b><br/>' 
+				+ "Number : " + props["Box no."] 
+				+ '<br/>' + "Installed : " + props["Date installed"] 
+				+ '<br />' + "2023 : " + props["2023"] 
+				+ '</br/>' + "2024 : " + props["2024"] 
+				+ '</br/>' + "2025 : " + props["2025"] 
 				+ '<br/>' + Streetview ;
 				
 				return contents;
@@ -71,15 +73,16 @@
 		function boxMarker(feature, latlng) {
 			 
 			 var geojsonMarkerOptions = {
-					radius: 6,
+					radius: 6, // increase to make more clickable
 					fillColor: getColour(feature),
 					color: "#000",
 					weight: 1,
 					opacity: 1,
 					fillOpacity: 0.8,
 					alt: feature.properties["Kind of Box"]
+					// autopan: false
 					};
-					// autoPan setting needed to prevent issues with popup
+					// ? autoPan setting needed to prevent issues with popup
 			  return L.circleMarker(latlng, geojsonMarkerOptions);
 		};
 
